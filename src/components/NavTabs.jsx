@@ -4,14 +4,22 @@ function NavTabs() {
   const currentPage = useLocation().pathname;
 
   return (
-    
-    <nav className="navbar navbar-expand-lg bg-secondary" data-bs-theme="dark" >
-      <div className="container-fluid">
-        <p className="navbar-brand" >
-          Dmitry
+    <nav className="navbar navbar-expand-lg bg-secondary" data-bs-theme="dark">
+      <div className="container-fluid mx-3">
+        <p className="navbar-brand">
+          <Link
+            to="/"
+            className={currentPage === "/" ? "nav-link active" : "nav-link"}
+            aria-current="page"
+          >
+            Dmitry
+          </Link>
         </p>
-                
-        <div className="collapse navbar-collapse justify-content-end"  id="navbarNav">
+
+        <div
+          className="collapse navbar-collapse justify-content-end"
+          id="navbarNav"
+        >
           <ul className="navbar-nav">
             <li className="nav-item">
               <Link
@@ -25,7 +33,9 @@ function NavTabs() {
             <li className="nav-item">
               <Link
                 to="/Portfolio"
-                className={currentPage === "/Portfolio" ? "nav-link active" : "nav-link"}
+                className={
+                  currentPage === "/Portfolio" ? "nav-link active" : "nav-link"
+                }
                 aria-current="page"
               >
                 Portfolio
@@ -34,7 +44,9 @@ function NavTabs() {
             <li className="nav-item">
               <Link
                 to="/Resume"
-                className={currentPage === "/Resume" ? "nav-link active" : "nav-link"}
+                className={
+                  currentPage === "/Resume" ? "nav-link active" : "nav-link"
+                }
                 aria-current="page"
               >
                 Resume
@@ -43,7 +55,9 @@ function NavTabs() {
             <li className="nav-item">
               <Link
                 to="/Contact"
-                className={currentPage === "/Contact" ? "nav-link active" : "nav-link"}
+                className={
+                  currentPage === "/Contact" ? "nav-link active" : "nav-link"
+                }
                 aria-current="page"
               >
                 Contacts

@@ -1,0 +1,77 @@
+#root {
+  /* max-width: 1280px; */
+  margin: 0 auto;
+  /* padding: 2rem; */
+  text-align: center;
+  background-color: #7b818b;
+  background-image: url('./components/images/background.jpg');
+}
+
+.github-link {
+  font-size: 150%;
+  color: black;
+  font: bold;
+}
+
+.github-link:hover {
+  /* font-size: 150%; */
+  color: rgb(173, 29, 29);
+  /* font-style: italic; */
+}
+
+.resume {
+  font-size: 150%;
+  font-style: italic;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.project-link img {
+  padding: 2px;
+
+  &:hover {
+    opacity: 0.7;
+    background-color: red;
+  }
+}
+
+.navbar-brand {
+  font-size: 36px;
+  font-style: italic;
+  font-weight: bold;
+  color: #b90404;
+}
+
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}

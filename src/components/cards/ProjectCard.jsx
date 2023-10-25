@@ -1,16 +1,16 @@
 export default function ProjectCard({ project }) {
   return (
-    <div key={project.id} className="col-md-4">
+    <div className="col-md-4 p-3">
     <div className="project-card">
       <div className="row">
-        <div className="col-md-6 d-flex align-items-center justify-content-center">
-          <h2>{project.name}</h2>
+        <div className="col-md-8 d-flex align-items-center ">
+          <h3>{project.name}</h3>
         </div>
-        <div className="col-md-6 d-flex align-items-center justify-content-center">
+        <div className="col-md-4 d-flex align-items-center justify-content-end">
           <a href={project.link} className="github-link">GitHub</a>
         </div>
       </div>
-      <a href={project.depLink}>
+      <a href={project.depLink} className="project-link">
         <img className="w-100" src={project.image} alt="" />
       </a>
     </div>
