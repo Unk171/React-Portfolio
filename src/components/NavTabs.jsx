@@ -5,7 +5,7 @@ function NavTabs() {
 
   return (
     <nav className="navbar navbar-expand-lg bg-secondary" data-bs-theme="dark">
-      <div className="container-fluid mx-3">
+      <div className="container-fluid mx-5">
         <p className="navbar-brand">
           <Link
             to="/"

@@ -26,6 +26,9 @@ export default function Resume() {
           <li>GraphQL</li>
         </ul>
       </div>
+      <dir>
+        <a href="https://drive.google.com/file/d/1RURv5GcQREXX71Gixl1Q8m22he3pbO-O/view?usp=drive_link">Download Resume</a>
+      </dir>
     </div>
   );
 }
