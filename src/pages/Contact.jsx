@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { validateEmail } from "../components/utils/helpers";
 
 export default function Contact() {
   const [userName, setUserName] = useState("");
@@ -99,16 +98,11 @@ export default function Contact() {
             onChange={messageHandler}
             type="text"
             placeholder="Type your message here"
-            style={{ width: '300px', height: '80px' }}
+            style={{ width: "300px", height: "80px" }}
           />
         </div>
         <button type="submit">Submit</button>
       </form>
-      {/* {errorMessage && (
-        <div>
-          <p className="error-text">{errorMessage}</p>
-        </div>
-      )} */}
     </div>
   );
 }
